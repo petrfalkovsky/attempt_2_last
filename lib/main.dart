@@ -47,7 +47,12 @@ class MyHomePage extends StatelessWidget {
           leading: Icon(Icons.thumb_up),
           trailing: Icon(Icons.arrow_forward),
           onTap: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context) => DetailPage(index)));
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => DetailPage(index),
+              ),
+            );
           },
         );
       },

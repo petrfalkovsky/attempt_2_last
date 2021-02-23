@@ -16,8 +16,8 @@ class DetailPage extends StatelessWidget{
           'Какой-то текст описания товара #$index',
           style: TextStyle(
             fontSize: 32.0
-            ),
           ),
+        ),
       ),
     );
   }
