@@ -12,7 +12,7 @@ class DetailPage extends StatelessWidget{
         title: Text('Какое-то описание товара'),
       ),
       body: Center(
-        child: Text('Какой-то текс описания товара #$index'),
+        child: Text('Какой-то текст описания товара #$index'),
       ),
     );
   }
