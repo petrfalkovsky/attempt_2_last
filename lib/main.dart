@@ -45,7 +45,7 @@ class MyHomePage extends StatelessWidget {
           title: Text('Заголовок товара #$index'),
           subtitle: Text('Тут описание товара'),
           leading: Icon(Icons.thumb_up),
-          trailing: Icon(
+          trailing: IconButton(
             icon: Icon(Icons.arrow_forward),
           onTap: () {
             Navigator.push(
