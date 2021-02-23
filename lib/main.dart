@@ -46,7 +46,7 @@ class MyHomePage extends StatelessWidget {
           subtitle: Text('Тут описание товара'),
           leading: Icon(Icons.thumb_up),
           trailing: Icon(Icons.arrow_forward),
-          onTap; () {
+          onTap: () {
             Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => DetailPage(index),
