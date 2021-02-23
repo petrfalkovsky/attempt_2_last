@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lib/details_product.dart'
+import 'package:attempt_2_last/details_product.dart'
 
 void main() => runApp(MyApp());
 
