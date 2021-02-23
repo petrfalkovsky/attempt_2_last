@@ -41,20 +41,22 @@ class MyHomePage extends StatelessWidget {
     return ListView.builder(
       itemCount: 15,
       itemBuilder: (_, index) {
-        return ListTile(
-          title: Text('Заголовок товара #$index'),
-          subtitle: Text('Тут описание товара'),
-          leading: Icon(Icons.thumb_up),
-          trailing: IconButton(
-             icon: Icon(Icons.arrow_forward),
+        return Card(
+          child: ListTile(
+            title: Text('Заголовок товара #$index'),
+            subtitle: Text('Тут описание товара'),
+            leading: Icon(Icons.thumb_up),
+            trailing: IconButton(
+              icon: Icon(Icons.arrow_forward),
               onPressed: () {
                 Navigator.push(
-                context,
+                  context,
                   MaterialPageRoute(
                     builder: (context) => DetailPage(index),
-              ),
-            );
-          }
+                  ),
+                );
+              },
+            ),
           ),
         );
       },
