@@ -14,7 +14,7 @@ class DetailPage extends StatelessWidget{
       body: Center(
         child: Text(
           'Какой-то текст описания товара #$index',
-          style: TectStyle(
+          style: TextStyle(
             fontSize: 32.0
             ),
           ),
