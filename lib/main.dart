@@ -54,7 +54,7 @@ class MyHomePage extends StatelessWidget {
                 builder: (context) => DetailPage(index),
               ),
             );
-          },
+          }
           ),
         );
       },
