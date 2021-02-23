@@ -5,7 +5,7 @@ class DetailPage extends StatelessWidget{
 
   DetailPage(this.index);
 
-  override
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
