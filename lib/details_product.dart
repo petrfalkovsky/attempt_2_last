@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class DetailPage extends StatelessWidget{}
+class DetailPage extends StatelessWidget{
   final int index;
 
   DetailPage(this.index);
