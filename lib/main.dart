@@ -41,7 +41,8 @@ class MyHomePage extends StatelessWidget {
     return ListView.builder(
       itemCount: 15,
       itemBuilder: (_, index) {
-        return ListTile(
+        return Card(
+        child ListTile(
           title: Text('Заголовок товара #$index'),
           subtitle: Text('Тут описание товара'),
           leading: Icon(Icons.thumb_up),
@@ -56,6 +57,7 @@ class MyHomePage extends StatelessWidget {
           },
         );
       },
+      ),
     );
   }
 }
