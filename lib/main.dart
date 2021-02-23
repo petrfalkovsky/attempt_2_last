@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:./details_product.dart'
 
 void main() => runApp(MyApp());
 
@@ -32,11 +33,11 @@ class MyHomePage extends StatelessWidget {
         // The title text which will be shown on the action bar
         title: Text(title),
       ),
-      body: _buildListView(),
+      body: _buildListView(context),
       );
   }
 
-  ListView _buildListView() {
+  ListView _buildListView(BuildContext context) {
     return ListView.builder(
       itemCount: 15,
       itemBuilder: (_, index) {
@@ -45,6 +46,14 @@ class MyHomePage extends StatelessWidget {
           subtitle: Text('Тут описание товара'),
           leading: Icon(Icons.thumb_up),
           trailing: Icon(Icons.arrow_forward),
+          onTap; () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => DetailPage(index),
+                ),
+              ),
+            );
+          }
         );
       },
     );
