@@ -49,11 +49,8 @@ class MyHomePage extends StatelessWidget {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => DetailPage(index),
-                ),
-              ),
-            );
-          }
+              MaterialPageRoute(builder: (context) => DetailPage(index)));
+          },
         );
       },
     );
