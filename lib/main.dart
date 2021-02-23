@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       // Application name
-      title: 'Attempt 2',
+      title: 'Список товаров с прокруткой, на-на-на',
       // Application theme data, you can set the colors for the application as
       // you want
       theme: ThemeData(
@@ -34,7 +34,7 @@ class MyHomePage extends StatelessWidget {
         title: Text(title),
       ),
       body: _buildListView(context),
-      );
+    );
   }
 
   ListView _buildListView(BuildContext context) {
@@ -47,12 +47,10 @@ class MyHomePage extends StatelessWidget {
           leading: Icon(Icons.thumb_up),
           trailing: Icon(Icons.arrow_forward),
           onTap: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => DetailPage(index)));
+            Navigator.push(context, MaterialPageRoute(builder: (context) => DetailPage(index)));
           },
         );
       },
     );
-  } 
+  }
 }
